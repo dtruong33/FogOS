@@ -114,7 +114,7 @@ man(char *path, bool f, char *word)
 int
 main(int argc, char *argv[])
 {
-  if(argc > 1 && strlen(argv[1]) + 3 > 128){
+  if(argc > 1 && strlen(argv[1]) + 8 > 128){
     printf("Man error: Argument exceeds path limit\n");
     exit(0);
   }if(argc > 4){
