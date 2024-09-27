@@ -8,18 +8,22 @@ SYNOPSIS
 
 DESCRIPTION
 	Manual instruction framwork for various xv6 functions and programs. Man
-	allows for easy documentation and help within the operating system.
+	allows for easy documentation and help within the operating system, 
+	displaying the requested man page. 
 
 EXAMPLES
 	man - brings up the man page for man()
 	
 	man ls - brings up the man page for ls()
 
-	man man grow - brings up the man page for man() then searchs for and highlights
-	the word "grow"
+	man man -f grow - brings up the man page for man() then searchs for the 
+	word "grow", showing only lines containing it
 
 OPTIONS
-	arg[2] - Word to find and highlight
+	-f - Flag for find
 
 HISTORY
-	9/23/24-Creation
+	9/23/24 - Creation
+
+AUTHOR
+	Written by Daniel Truong
