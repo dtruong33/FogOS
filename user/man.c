@@ -78,7 +78,8 @@ man(char *path, bool f, char *word)
 
   char manPath[128];
   char suffix[] = ".md";
-  strcpy(manPath, arg);
+  strcat(manPath, "docs/");
+  strcat(manPath, arg);
   strcat(manPath, suffix);
 
   int fd = open(manPath, O_RDONLY);

@@ -134,8 +134,8 @@ UPROGS=\
 	$U/_wc\
 	$U/_zombie\
 
-fs.img: mkfs/mkfs README.md man.md $(UPROGS)
-	mkfs/mkfs fs.img README.md man.md $(UPROGS)
+fs.img: mkfs/mkfs README.md docs $(UPROGS)
+	mkfs/mkfs fs.img README.md docs $(UPROGS)
 
 -include kernel/*.d user/*.d
 
