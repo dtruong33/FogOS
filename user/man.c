@@ -120,7 +120,7 @@ main(int argc, char *argv[])
   }if(argc > 4){
     printf("Man error: Too many arguments, limit of 4\n");
     exit(0);
-  }if(argc > 2 && *argv[2] != 'f'){
+  }if(argc > 2 && strcmp(argv[2], "-f") != 0){
     printf("Man error: Unknown Flag\n");
     exit(0);
   }
@@ -130,7 +130,7 @@ main(int argc, char *argv[])
     exit(0);
   }else if(argc == 2){
     man(argv[1], false, NULL);
-  }else if(argc == 4 && *argv[2] == 'f'){
+  }else if(argc == 4){
     man(argv[1], true, argv[3]);
   }
 
