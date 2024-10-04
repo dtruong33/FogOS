@@ -123,6 +123,9 @@ main(int argc, char *argv[])
   }if(argc > 2 && strcmp(argv[2], "-f") != 0){
     printf("Man error: Unknown Flag\n");
     exit(0);
+  }if(argc == 3){
+    printf("Man error: Term needed for find\n");
+    exit(0);
   }
 
   if(argc < 2){
